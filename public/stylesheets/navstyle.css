@@ -1,7 +1,28 @@
+#entireNavbar{
+  position: fixed;
+  position: absolute;
+}
+
+.dropdown-toggle{
+	color: #291670;
+}
+
+.dropdown-toggle:hover{
+	color: #291670 !important;
+}
+
 .navbar-brand{
 font-size: 36px;
 font-family: "Times New Roman", Times, serif;
 font-weight: 300;
+color: #291670 !important;
+}
+
+a .navbar-brand{
+font-size: 36px;
+font-family: "Times New Roman", Times, serif;
+font-weight: 300;
+color: #291670 !important;
 }
 
 .dropdown-menu {
@@ -40,4 +61,15 @@ font-weight: 300;
 		min-width: 240px !important;
 		overflow-x: hidden;
 	}
+}
+
+#colorstrip{
+    width: 100%; height: 2px;
+    border-style: solid;
+    border-color: #291670;
+    background-color: #291670;
+}
+
+#space{
+  visibility: hidden;
 }

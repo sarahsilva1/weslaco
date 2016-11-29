@@ -1,39 +1,37 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'City of Weslaco' });
 });
 
-/*  return to home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'City of Weslaco' });
+router.get('/jobs', function(req, res, next) {
+  res.render('jobs', { title: 'Weslaco Jobs' });
 });
 
-/* GET news page. */
-router.get('/news', function(req, res, next) {
-  res.render('news', { title: 'Weslaco News' });
-});
-
-/* GET residents page. */
 router.get('/residents', function(req, res, next) {
   res.render('residents', { title: 'Weslaco Residents' });
 });
 
-/* GET visitors page. */
+router.get('/parks', function(req, res, next) {
+  res.render('parks', { title: 'Weslaco Parks & Recreation' });
+});
+
 router.get('/visitors', function(req, res, next) {
   res.render('visitors', { title: 'Weslaco Visitors' });
 });
 
-/* GET Business page. */
 router.get('/business', function(req, res, next) {
   res.render('business', { title: 'Business News' });
 });
 
-/* GET government page. */
 router.get('/government', function(req, res, next) {
   res.render('government', { title: 'Government News' });
 });
+
+router.get('/utilities', function(req, res, next) {
+  res.render('utilities', { title: 'Weslaco Utilities' });
+});
+
 
 module.exports = router;
